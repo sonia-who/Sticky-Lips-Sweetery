@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- To embed Bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+      integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
+      crossorigin="anonymous"
+    />
+
+    <!-- Added to upload icons from fontawesome -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+    />
+
+    <title>Sticky Lips Sweetery</title>
+
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css" />
+
+    <!-- import the webpage's javascript file -->
+    <script src="/script.js" defer></script>
+
+    <!-- To embed font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Stylish&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="logo">
+        <a href="./index.html">
+          <img
+            class="logosize"
+            src="https://cdn.glitch.com/cff44f25-b4c0-44fe-ab17-c83b3f5e9a90%2FDA616F03-A111-4034-8C5C-2A16BF24934F.png?v=1619740389068"
+            alt="Sticky Lips Sweetery Logo"
+          />
+        </a>
+      </div>
+      <div class="titlecontainer">
+        <h1 class="titletext">
+          <a href="./index.html" class="titlelink">Sticky Lips Sweetery</a>
+        </h1>
+      </div>
+
+      <div class="dropdown">
+        <button
+          class="btn btn-secondary"
+          type="button"
+          id="dropdownMenuButton"
+          data-toggle="dropdown"
+          aria-haspopup="true"
+          aria-expanded="false"
+        >
+          <i class="fas fa-bars"></i>
+        </button>
+        <div
+          class="dropdown-menu dropdown-menu-right"
+          aria-labelledby="dropdownMenuButton"
+        >
+          <a class="dropdown-item" href="./candy.html">Candy Shops</a>
+          <a class="dropdown-item" href="./icecream.html">Ice Cream Shops</a>
+          <a class="dropdown-item" href="./drinks.html">Drink Shops</a>
+          <a class="dropdown-item" href="./food.html">Food Shops</a>
+        </div>
+      </div>
+    </header>
+
+    <!-- Bootstrap Carousel -->
+
+    <div
+      id="carouselExampleIndicators"
+      class="carousel slide"
+      data-ride="carousel"
+    >
+      <div class="main-theme">
+        <h3 id="theme-message">SUPPORT YOUR LOCAL SWEET SHOPS</h3>
+        <br />
+        <p id="theme-message-details">
+          Find the best sweet shops around your local community right here!
+          Explore amazing treats made from your community and get munching!
+        </p>
+      </div>
+
+      <ol class="carousel-indicators">
+        <li
+          data-target="#carouselExampleIndicators"
+          data-slide-to="0"
+          class="active"
+        ></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item">
+          <img
+            class="d-block w-100 perfectfit"
+            src="https://cdn.glitch.com/cff44f25-b4c0-44fe-ab17-c83b3f5e9a90%2FrawImage-1.jpeg?v=1620361285504"
+            alt="Candy Shops Preview"
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            class="d-block w-100 perfectfit"
+            src="https://cdn.glitch.com/cff44f25-b4c0-44fe-ab17-c83b3f5e9a90%2F1BF93481-1B15-4C0A-BFF7-5ED8A961070D.jpeg?v=1620272301476"
+            alt="Ice Cream Shops Preview"
+          />
+        </div>
+        <div class="carousel-item active">
+          <img
+            class="d-block w-100 perfectfit"
+            src="https://cdn.glitch.com/cff44f25-b4c0-44fe-ab17-c83b3f5e9a90%2FC1C00128-1BED-43A1-B675-3AAAE08B8525.jpeg?v=1620269132611"
+            alt="Drink Shops Preview"
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            class="d-block w-100 perfectfit"
+            src="https://cdn.glitch.com/cff44f25-b4c0-44fe-ab17-c83b3f5e9a90%2Fc98520c3-8e63-49ad-8692-7cf855119d4a-1.jpg?v=1620269306863"
+            alt="Food Shops Preview"
+          />
+        </div>
+      </div>
+      <a
+        class="carousel-control-prev"
+        href="#carouselExampleIndicators"
+        role="button"
+        data-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a
+        class="carousel-control-next"
+        href="#carouselExampleIndicators"
+        role="button"
+        data-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+
+    <!-- Explore Section -->
+
+    <div class="explore-section">
+      <h2 class="explore-text">EXPLORE</h2>
+
+      <div class="card-group">
+        <!-- Candy Shops Card **IMAGES MUST BE 286 X 180** -->
+        <div class="card">
+          <img
+            class="card-img-top"
+            src="https://cdn.glitch.com/cff44f25-b4c0-44fe-ab17-c83b3f5e9a90%2Fcandy.jpg?v=1619739019403"
+            alt="Candy Shops"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Candy Shops</h5>
+            <p class="card-text">
+              Click the button below to explore some of the LOCAL ice cream
+              shops and what they have to offer!
+            </p>
+            <a href="./candy.html" class="btn btn-secondary">View Shops</a>
+          </div>
+        </div>
+
+        <!-- Ice Cream Shops Card **IMAGES MUST BE 286 X 180** -->
+        <div class="card">
+          <img
+            class="card-img-top"
+            src="https://cdn.glitch.com/cff44f25-b4c0-44fe-ab17-c83b3f5e9a90%2FEasy-Breezy-Full-Image-4.jpg?v=1620108825423"
+            alt="Ice Cream Shops"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Ice Cream Shops</h5>
+            <p class="card-text">
+              Click the button below to explore some of the LOCAL ice cream
+              shops and what they have to offer!
+            </p>
+            <a href="./icecream.html" class="btn btn-secondary">View Shops</a>
+          </div>
+        </div>
+
+        <!-- Drink Shops Card **IMAGES MUST BE 286 X 180** -->
+        <div class="card">
+          <img
+            class="card-img-top"
+            src="https://cdn.glitch.com/cff44f25-b4c0-44fe-ab17-c83b3f5e9a90%2FDrink%20Shops%20Title%20Image.jpeg?v=1619669336970"
+            alt="Drink Shops"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Drink Shops</h5>
+            <p class="card-text">
+              Click the button below to explore some of the LOCAL drink shops
+              and what they have to offer!
+            </p>
+            <a href="./drinks.html" class="btn btn-secondary">View Shops</a>
+          </div>
+        </div>
+
+        <!-- Food Shops Card **IMAGES MUST BE 286 X 180** -->
+        <div class="card">
+          <img
+            class="card-img-top"
+            src="https://cdn.glitch.com/cff44f25-b4c0-44fe-ab17-c83b3f5e9a90%2Fchoc-eclairs.jpg?v=16197415644088"
+            alt="Food Shops"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Food Shops</h5>
+            <p class="card-text">
+              Click the button below to explore some of the LOCAL food shops and
+              what they have to offer!
+            </p>
+            <a href="./food.html" class="btn btn-secondary">View Shops</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="whylocal-section">
+      <h2 class="whylocal">WHY SHOULD YOU SUPPORT LOCAL BUSINESSES?</h2>
+      <p class="whylocaldetails">
+        Local businesses have been the most affected shops around the world
+        because of the pandemic and it has been challenging for them to reopen.
+        Specifically, in the Bay area rent prices are high and many can not
+        afford to keep reopening. Many local shops have had to close due to this
+        and have not had a lot of support from the government to relieve this
+        worry. They have also not had a lot of business because of people being
+        scared to go out and they have more things to pay off for like hand
+        sanitizer, masks, and gloves. This had lead to many financial struggles
+        for the business owners and many neighborhood favorites had to close
+        down. Although, if you visit their shop then you will be supporting the
+        people behind that shop and getting a delicious treat in return!
+      </p>
+    </div>
+
+    <!-- About Us -->
+    <div class="aboutus-section" id="aboutus">
+      <div>
+        <h2 class="aboutus-text">ABOUT US</h2>
+      </div>
+
+      <div>
+        <p>
+          We're three students in a web design class, creating a website by
+          following one of Mission Bit's core values. Check out more about their
+          mission and classes here:
+          <a
+            href="https://www.missionbit.org"
+            target="Mission Bit"
+            class="darklink"
+            >Mission Bit</a
+          >. Keep scrolling to see a little bit about ourselves! Feel free to
+          contact us using the links below or through our socials with any
+          questions, concerns, and/or suggestions!
+        </p>
+      </div>
+
+      <button type="button" class="collapsible">Sonia Lee</button>
+      <div class="content">
+        <p>
+          Hi, I'm Sonia, a freshman in highschool! I'm currently learning web design at Mission Bit's
+          class. I hope this website can help anyone who wants to grab a quick
+          treat around San Francisco to indulge in and support its local
+          businesses!
+        </p>
+      </div>
+
+      <button type="button" class="collapsible">Kimberly Alvarado</button>
+      <div class="content">
+        <p>
+          Hi, I'm Kimberly! I am currently a Freshman living in the Bay Area. I
+          am also in the class Web Design at Mission Bit. I enjoy grabbing
+          treats every so often and I hope these reccomendations will help you
+          choose treats around San Francisco and you will also be supporting
+          local businesses!
+        </p>
+      </div>
+
+      <button type="button" class="collapsible">Saray Mendoza</button>
+      <div class="content">
+        <p>
+          Hi, I'm Saray, I am currently a junior in High School attending the
+          "Web Design" class for Missionbit!
+        </p>
+      </div>
+    </div>
+
+    <footer>
+      <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+      />
+
+      <div class="footer">
+        <div class="row">
+          <!-- link to floats for columns: https://www.w3schools.com/howto/howto_css_two_columns.asp -->
+
+          <!-- SLS Logo -->
+          <div id="col0" class="col">
+            <img
+              id="logo"
+              src="https://cdn.glitch.com/cff44f25-b4c0-44fe-ab17-c83b3f5e9a90%2FDA616F03-A111-4034-8C5C-2A16BF24934F.png?v=1619740389068"
+              alt="Sticky Lips Sweetery"
+            />
+          </div>
+
+          <!-- Find Local Treats! -->
+          <div id="col1" class="col">
+            <ul>
+              <li><span class="footerheadings">Find Local Treats!</span></li>
+              <li>
+                <a href="./candy.html">Candy Shops</a>
+              </li>
+              <li>
+                <a href="./icecream.html"
+                  >Ice Cream Shops</a
+                >
+              </li>
+              <li>
+                <a href="./drinks.html">Drink Shops</a>
+              </li>
+              <li><a href="./food.html">Food Shops</a></li>
+            </ul>
+          </div>
+
+          <!-- Contact Us -->
+          <div id="col2" class="col">
+            <ul>
+              <li><span class="footerheadings">Contact Us</span></li>
+              <li>
+                <a href="#aboutus"
+                  ><i class="fas fa-user-friends"></i> About Us
+                </a>
+              </li>
+              <li>
+                <a href="#"><i class="fas fa-phone"></i> 000-000-0000 </a>
+              </li>
+              <li>
+                <a href="#"
+                  ><i class="far fa-envelope"></i>
+                  stickylipssweetery@gmail.com</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- Socials -->
+          <div id="col3" class="col">
+            <ul>
+              <li><span class="footerheadings">Socials</span></li>
+              <li>
+                <a href="#"
+                  ><i class="fab fa-instagram"></i> stickylipssweetery
+                </a>
+              </li>
+              <li>
+                <a href="#"
+                  ><i class="fab fa-facebook"></i> Sticky Lips Sweetery
+                </a>
+              </li>
+              <li>
+                <a href="#"
+                  ><i class="fab fa-twitter"></i> Sticky Lips Sweetery
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div>
+          <!-- Bottom Row Copyright-->
+          <p class="aligncenter clear" id="copyrightsign">
+            © 2021 Sticky Lips Sweetery
+          </p>
+        </div>
+        <div></div>
+      </div>
+    </footer>
+
+    <!-- Javascript for Carousel/Menu Button -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
