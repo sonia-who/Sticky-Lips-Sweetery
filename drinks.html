@@ -7,12 +7,12 @@
 
     <!-- To embed Bootstrap -->
     <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
       rel="stylesheet"
-      integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+      integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
       crossorigin="anonymous"
     />
-  
+
     <!-- Added to upload icons from fontawesome -->
     <link
       rel="stylesheet"
@@ -26,198 +26,355 @@
 
     <!-- import the webpage's javascript file -->
     <script src="/script.js" defer></script>
-  
-    <!-- To embed font -->
-    <link rel="preconnect" href="https://fonts.gstatic.com"> 
-  <link href="https://fonts.googleapis.com/css2?family=Stylish&display=swap" rel="stylesheet">
-    
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
 
-  </head> 
+    <!-- To embed font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Stylish&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
   <body>
-    
-    
     <header class="header">
-    
-     <div class= "logo"> 
-      <a href="./index.html">
-      <img src="https://cdn.glitch.com/cff44f25-b4c0-44fe-ab17-c83b3f5e9a90%2FDA616F03-A111-4034-8C5C-2A16BF24934F.png?v=1619740389068" alt="Sticky Lips Sweetery Logo" style="width:42px;height:42px;">
-      </a>
-      </div> 
-       <div class= "titlecontainer"> 
-        <h1 class= "titletext">Sticky Lips Sweetery</h1>
-       </div>
-    </header> 
-    
-    <!-- Maybe some sort of headers for smoothis, coffee, and tea and a #href tag that leads to that specific part of the page -->
-    
-    <!-- 
-    <p class= "shopintro">Welcome! Here you will find local drink shops including refreshing juices/smoothies, fresh-brewed coffee, and tea shops (aka boba)!</p>
-    -->
-    
-    <!-- DRINK SHOPS: SMOOTHIES & JUICES -->
-        <hr>
-    <h2 class= "shoptypes">DRINK SHOPS: SMOOTHIES & JUICES</h2>
+      <div class="logo">
+        <a href="./index.html">
+          <img
+            class="logosize"
+            src="https://cdn.glitch.com/cff44f25-b4c0-44fe-ab17-c83b3f5e9a90%2FDA616F03-A111-4034-8C5C-2A16BF24934F.png?v=1619740389068"
+            alt="Sticky Lips Sweetery Logo"
+          />
+        </a>
+      </div>
+      <div class="titlecontainer">
+        <h1 class="titletext">
+          <a href="./index.html" class="titlelink">Sticky Lips Sweetery</a>
+        </h1>
+      </div>
+
+      <div class="dropdown">
+        <button
+          class="btn btn-secondary"
+          type="button"
+          id="dropdownMenuButton"
+          data-toggle="dropdown"
+          aria-haspopup="true"
+          aria-expanded="false"
+        >
+          <i class="fas fa-bars"></i>
+        </button>
+        <div
+          class="dropdown-menu dropdown-menu-right"
+          aria-labelledby="dropdownMenuButton"
+        >
+          <a class="dropdown-item" href="./candy.html">Candy Shops</a>
+          <a class="dropdown-item" href="./icecream.html">Ice Cream Shops</a>
+          <a class="dropdown-item" href="./drinks.html">Drink Shops</a>
+          <a class="dropdown-item" href="./food.html">Food Shops</a>
+        </div>
+      </div>
+    </header>
+
+
+
+    <!-- Maybe some sort of headers for smoothies, coffee, and tea and a #href tag that leads to that specific part of the page -->
+    <hr />
+    <h2 class="shoptypes">DRINK SHOPS: SMOOTHIES & JUICES</h2>
+    <hr />
+
+    <div class="container">
+      <!-- DRINK SHOPS: SMOOTHIES & JUICES -->
       <div>
-        <hr>
-        
         <h4>Juice Portal</h4>
-        
-          <div class="row">
-            <div class="column">
-              <img class= "drinkimages" src= "https://cdn.glitch.com/cff44f25-b4c0-44fe-ab17-c83b3f5e9a90%2FJuice%20Portal.jpeg?v=1619656968294" alt = "Juice Portal">
-              <p></p>
-            </div>
-            <div class="column shopdetails">
-              <p><b>Address:</b> 166 W Portal Ave, San Francisco, CA 94127</p>
-              <p><b>Telophone:</b> (415) 702-6015</p>
-              <p>Juice Portal is a local business located in West Portal of SF. It offers a wide variety of juices and smoothies filled with nutrition. See more information through their website: <a href="https://www.juiceportalsf.com/" target= "Juice Portal" class= "">Juice Portal</a></p>
-            </div>
+
+        <div class="row">
+          <div class="column">
+            <img
+              class="drinkimages"
+              src="https://cdn.glitch.com/cff44f25-b4c0-44fe-ab17-c83b3f5e9a90%2FJuice%20Portal.jpeg?v=1619656968294"
+              alt="Juice Portal"
+            />
+            <p></p>
           </div>
-        
-        
-        <hr>
+          <div class="column shopdetails">
+            <p><b>Address:</b> 166 W Portal Ave, San Francisco, CA 94127</p>
+            <p><b>Telophone:</b> (415) 702-6015</p>
+            <p>
+              Juice Portal is a local business located in West Portal of SF. It
+              offers a wide variety of juices and smoothies filled with
+              nutrition. See more information through their website:
+              <a
+                href="https://www.juiceportalsf.com/"
+                target="Juice Portal"
+                class="darklink"
+                >Juice Portal</a
+              >
+            </p>
+          </div>
+        </div>
+
+        <hr />
 
         <h4>Juicy Fruit</h4>
-          <div class="row">
-            <div class="column shopdetails">
-              <p><b>Address:</b> 1768 Jackson St, San Francisco, CA 94133</p>
-              <p><b>Telophone:</b> (415) 989-3028</p>
-              <p>JJuicy Fruit is a local business located in Chinatown of SF. The fruits used to make the fresh juices and smoothies are </p>
-            </div>
-            <div class="column">
-              <img class= "drinkimages" src= "https://cdn.glitch.com/cff44f25-b4c0-44fe-ab17-c83b3f5e9a90%2Fl.jpg?v=1619844443138" alt = "Juicy Fruit">
-              <p></p>
-            </div>
+        <div class="row">
+          <div class="column shopdetails">
+            <p><b>Address:</b> 1768 Jackson St, San Francisco, CA 94133</p>
+            <p><b>Telophone:</b> (415) 989-3028</p>
+            <p>
+              Juicy Fruit is a local business located in Chinatown of SF. The
+              fruits used to make the fresh juices and smoothies are the
+              freshest possible because they use the fruits next door (shown in
+              the picture on the right). The juices serve as great refreshers
+              and are a must go to if you visit SF's Chinatown!
+            </p>
           </div>
-        
-        <hr>
+          <div class="column">
+            <img
+              class="drinkimages"
+              src="https://cdn.glitch.com/cff44f25-b4c0-44fe-ab17-c83b3f5e9a90%2Fl.jpg?v=1619844443138"
+              alt="Juicy Fruit"
+            />
+            <p></p>
+          </div>
+        </div>
       </div>
-            
-        <h4>Juice Portal</h4>
-          <div class="row">
-            <div class="column">
-              <img class= "drinkimages" src= "https://cdn.glitch.com/cff44f25-b4c0-44fe-ab17-c83b3f5e9a90%2FJuice%20Portal.jpeg?v=1619656968294" alt = "Juice Portal">
-              <p></p>
-            </div>
-            <div class="column shopdetails">
-              <p><b>Address:</b> 166 W Portal Ave, San Francisco, CA 94127</p>
-              <p><b>Telophone:</b> (415) 702-6015</p>
-              <p>Juice Portal is a local business located in West Portal of SF. It offers a wide variety of juices and smoothies filled with nutrition. See more information through their website: <a href="https://www.juiceportalsf.com/" target= "Juice Portal" class= "">Juice Portal</a></p>
-            </div>
-          </div>
-        
-        
-        <hr>
-    
-    <!-- DRINK SHOPS: COFFEE -->
-    <h2 class= "shoptypes">DRINK SHOPS: COFFEE</h2>
-      <hr>
+    </div>
 
-        <h4>Four Barrel Coffee</h4>
-          <div class="row">
-            <div class="column shopdetails">
-              <p><b>Locations:</b></p>
-              <ol>
-                <li>375 Valencia St, San Francisco, CA 94103</li>
-                <p><b>Telophone:</b> (415) 715-8296</p>
-                <li>736 Divisadero St, San Francisco, CA 94117</li>
-                <p><b>Telophone:</b> (415) 715-8296</p>
-                <li>2 Burrows St, San Francisco, CA 94134 (Temporarily Closed)</li>
-                <p><b>Telophone:</b> (415) 715-8296</p>
-              </ol>
-              <p>Four Barrel Coffee is a local business in SF with three locations.</p>
-            </div>
-            <div class="column">
-              <img class= "drinkimages" src= "https://cdn.glitch.com/cff44f25-b4c0-44fe-ab17-c83b3f5e9a90%2FFour%20Barrel%20Coffee%20Coffee.jpeg?v=1619991381821" alt = "Four Barrel Coffee's Coffee">
-              <p></p>
-            </div>
-          </div>
-    
-        <hr>
-    
-        <h4>Snowbird Coffee</h4>
-          <div class="row">
-            <div class="column">
-              <img class= "drinkimages" src= "https://cdn.glitch.com/cff44f25-b4c0-44fe-ab17-c83b3f5e9a90%2Fsnowbird-latte.webp?v=1620171639695" alt = "Snowbird Coffee">
-              <p></p>
-            </div>
-            <div class="column shopdetails">
-              <p><b>Address:</b> 1352 9th Ave A, San Francisco, CA 94122</p>
-              <p><b>Telophone:</b> (415) 890-0043</p>
-              <p>Snowbird Coffee is a local bussiness located in the Inner Sunset! It's an intimate coffeehouse with comfortable seating. And there's free WiFi! See more information through their website: <a href="https://snowbirdcoffee.com/" target= "Snowbird Coffee" class= "">Snowbird Coffee</a></p>
-            </div>
-          </div>
-        
-        <hr>
-    
-    
-    
-    <footer>   
-         
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    
-    <div class="footer">
-      <!-- SLS Logo -->
-      <img id= "logo" src = "https://cdn.glitch.com/cff44f25-b4c0-44fe-ab17-c83b3f5e9a90%2FDA616F03-A111-4034-8C5C-2A16BF24934F.png?v=1619740389068"
-      alt= "Sticky Lips Sweetery">
-      
+    <!-- DRINK SHOPS: COFFEE -->
+    <hr />
+    <h2 class="shoptypes">DRINK SHOPS: COFFEE</h2>
+    <hr />
+
+    <div class="container">
+      <h4>Four Barrel Coffee</h4>
       <div class="row">
-        <!-- link to floats for columns: https://www.w3schools.com/howto/howto_css_two_columns.asp -->
-        
-        <!-- Find Local Treats! -->
-        <div id= "col1" class="col">
-          <ul>
-            <li><span class= "footerheadings">Find Local Treats!</span></li>
-            <li><a href = "./candy.html"
-                   target = "Candy Shops"
-                   >Candy Shops</a></li>
-            <li><a href = "./icecream.html"
-                   target = "Ice Cream Shops"
-                   >Ice Cream Shops</a></li>
-            <li><a href = "./drinks.html"
-                   target = "Drink Shops"
-                   >Drink Shops</a></li>
-            <li><a href = "./food.html"
-                   target = "Food Shops"
-                   >Food Shops</a></li>
-          </ul>
+        <div class="column shopdetails">
+          <p><b>Locations:</b></p>
+          <ol>
+            <li>375 Valencia St, San Francisco, CA 94103</li>
+            <p><b>Telophone:</b> (415) 715-8296</p>
+            <li>736 Divisadero St, San Francisco, CA 94117</li>
+            <p><b>Telophone:</b> (415) 715-8296</p>
+            <li>2 Burrows St, San Francisco, CA 94134 (Temporarily Closed)</li>
+            <p><b>Telophone:</b> (415) 715-8296</p>
+          </ol>
+          <p>
+            Four Barrel Coffee is a local business in SF with three locations.
+            See more information through their website:
+            <a
+              href="https://www.fourbarrelcoffee.com/"
+              target="Four Barrel Coffee"
+              class="darklink"
+              >Four Barrel Coffee</a
+            >
+          </p>
         </div>
-        
-        <!-- Contact Us -->
-        <div id ="col2" class="col">
-          <ul>
-            <li><span class= "footerheadings">Contact Us</span></li>
-            <li><a href = "#aboutus"><i class="fas fa-user-friends"></i> About Us </a></li>
-            <li><a href = "#"><i class="fas fa-phone"></i> 000-000-0000 </a></li>
-            <li><a href = "#"><i class="far fa-envelope"></i> stickylipssweetery@gmail.com</a></li>
-          </ul>
+        <div class="column">
+          <img
+            class="drinkimages"
+            src="https://cdn.glitch.com/cff44f25-b4c0-44fe-ab17-c83b3f5e9a90%2FFour%20Barrel%20Coffee%20Coffee.jpeg?v=1619991381821"
+            alt="Four Barrel Coffee's Coffee"
+          />
+          <p></p>
         </div>
-        
-        <!-- Socials -->
-        <div id="col3" class="col">
-          <ul>
-            <li><span class= "footerheadings">Socials</span></li>
-            <li><a href = "#"><i class="fab fa-instagram"></i> stickylipssweetery </a></li>
-            <li><a href = "#"><i class="fab fa-facebook"></i> Sticky Lips Sweetery </a></li>
-            <li><a href = "#"><i class="fab fa-twitter"></i> Sticky Lips Sweetery </a></li>
-          </ul>
-        </div>
-      
       </div>
-        
-     <div>
-       <!-- Bottom Row Copyright-->
-      <p class= "aligncenter" id= "copyrightsign"> © 2021 Sticky Lips Sweetery</p>
+
+      <hr />
+
+      <h4>Snowbird Coffee</h4>
+      <div class="row">
+        <div class="column">
+          <img
+            class="drinkimages"
+            src="https://cdn.glitch.com/cff44f25-b4c0-44fe-ab17-c83b3f5e9a90%2Fsnow.jpg?v=1620444129698"
+            alt="Snowbird Coffee"
+          />
+          <p></p>
+        </div>
+        <div class="column shopdetails">
+          <p><b>Address:</b> 1352 9th Ave A, San Francisco, CA 94122</p>
+          <p><b>Telophone:</b> (415) 890-0043</p>
+          <p>
+            Snowbird Coffee is a local business located in the Inner Sunset!
+            It's an intimate coffeehouse with comfortable seating. And there's
+            free WiFi! See more information through their website:
+            <a
+              href="https://snowbirdcoffee.com/"
+              target="Snowbird Coffee"
+              class="darklink"
+              >Snowbird Coffee</a
+            >
+          </p>
+        </div>
+      </div>
     </div>
-    <div>
-        
+
+    <!-- DRINK SHOPS: BOBA -->
+    <hr />
+    <h2 class="shoptypes">DRINK SHOPS: BOBA TEA</h2>
+    <hr />
+
+    <div class="container">
+      <h4>Wonderful Foods</h4>
+      <div class="row">
+        <div class="column shopdetails">
+          <p><b>Address:</b> 2035 Irving St, San Francisco, CA 94122</p>
+          <p><b>Telophone:</b> (415) 731-6889</p>
+          <p>
+            Wonderful Foods is a local business located in the Outer Sunset!
+            It's a small shop known to have the best tapioca in town. PLUS, it
+            doubles as a candy shop with many delicate candies.
+          </p>
+        </div>
+        <div class="column">
+          <img
+            class="drinkimages"
+            src="https://cdn.glitch.com/cff44f25-b4c0-44fe-ab17-c83b3f5e9a90%2F1530816277958-w2880-61.jpg?v=1620267561230"
+            alt="Wonderful Foods"
+          />
+          <p></p>
+        </div>
+      </div>
+
+      <hr />
+
+      <h4>Qualitea</h4>
+      <div class="row">
+        <div class="column">
+          <img
+            class="drinkimages"
+            src="https://cdn.glitch.com/cff44f25-b4c0-44fe-ab17-c83b3f5e9a90%2Fraster-static.postmates.jpg?v=1620268120341"
+            alt="Qualitea"
+          />
+          <p></p>
+        </div>
+        <div class="column shopdetails">
+          <p><b>Address:</b> 4023 18th St, San Francisco, CA 94114</p>
+          <p><b>Telophone:</b> (415) 712-9364</p>
+          <p>
+            Qualitea is a bubble tea shop that also serves pure teas, coffee,
+            lattes, smoothies, and fruit-flavored teas. Like their name, they
+            focus on the quality of their drinks! All drinks are inspired by the
+            owner's trips to Taiwan and Hong Kong!
+          </p>
+        </div>
+      </div>
+
     </div>
-    </div>
-  
-    </footer>   
+
+   <footer>
+      <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+      />
+
+      <div class="footer">
+        <div class="row">
+          <!-- link to floats for columns: https://www.w3schools.com/howto/howto_css_two_columns.asp -->
+
+          <!-- SLS Logo -->
+          <div id="col0" class="col">
+            <img
+              id="logo"
+              src="https://cdn.glitch.com/cff44f25-b4c0-44fe-ab17-c83b3f5e9a90%2FDA616F03-A111-4034-8C5C-2A16BF24934F.png?v=1619740389068"
+              alt="Sticky Lips Sweetery"
+            />
+          </div>
+
+          <!-- Find Local Treats! -->
+          <div id="col1" class="col">
+            <ul>
+              <li><span class="footerheadings">Find Local Treats!</span></li>
+              <li>
+                <a href="./candy.html">Candy Shops</a>
+              </li>
+              <li>
+                <a href="./icecream.html"
+                  >Ice Cream Shops</a
+                >
+              </li>
+              <li>
+                <a href="./drinks.html">Drink Shops</a>
+              </li>
+              <li><a href="./food.html">Food Shops</a></li>
+            </ul>
+          </div>
+
+          <!-- Contact Us -->
+          <div id="col2" class="col">
+            <ul>
+              <li><span class="footerheadings">Contact Us</span></li>
+              <li>
+                <a href="#aboutus"
+                  ><i class="fas fa-user-friends"></i> About Us
+                </a>
+              </li>
+              <li>
+                <a href="#"><i class="fas fa-phone"></i> 000-000-0000 </a>
+              </li>
+              <li>
+                <a href="#"
+                  ><i class="far fa-envelope"></i>
+                  stickylipssweetery@gmail.com</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- Socials -->
+          <div id="col3" class="col">
+            <ul>
+              <li><span class="footerheadings">Socials</span></li>
+              <li>
+                <a href="#"
+                  ><i class="fab fa-instagram"></i> stickylipssweetery
+                </a>
+              </li>
+              <li>
+                <a href="#"
+                  ><i class="fab fa-facebook"></i> Sticky Lips Sweetery
+                </a>
+              </li>
+              <li>
+                <a href="#"
+                  ><i class="fab fa-twitter"></i> Sticky Lips Sweetery
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div>
+          <!-- Bottom Row Copyright-->
+          <p class="aligncenter clear" id="copyrightsign">
+            © 2021 Sticky Lips Sweetery
+          </p>
+        </div>
+        <div></div>
+      </div>
+    </footer>
+        <!-- Javascript for Carousel/Menu Button -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
     
-  </body> 
+  </body>
 </html>

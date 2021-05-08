@@ -2,6 +2,22 @@
 
 header {
   font-family: 'Stylish', sans-serif;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+
+.titlelink 
+  color: white;
+
+}
+.titlelink: hover {
+  
+ text-decoration: none;
+}
+
+.btnbtn-secondary {
+  color: #94B0B0;
 }
 
 body {
@@ -66,14 +82,17 @@ h4 {
   color: white;
   font-size: 20px;
   display: flex;
-  margin-bottom: 100px;
   width: 100%;
-
 }
 
 
 .logo {
   padding: 10px;
+}
+
+.logosize {
+  width: 60px;
+  height: 60px;
 }
 
 .titlecontainer {
@@ -94,11 +113,15 @@ h4 {
 
 .main-theme {
   background-color: #94B0B0;
-  padding: 10px;
-  width: 47%;
+  padding: 20px;
+  width: 50%;
   display:grid;
   color: white;
-  
+  position: absolute;
+  z-index: 1;
+  right: 0px;
+  bottom: 80px;
+  opacity: 0.875;
 }
 
 #theme-message {
@@ -116,20 +139,28 @@ h4 {
 
 /* Explore Section */
 .explore-section {
-  
   background-color: #E0CEB3;
-  padding: 20px;  
+  padding: 20px;
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 
 .explore-text {
   color: white;
   text-align: center;
   font-style: bold;
+  font-size: 50px;
 }
 
 .card {
   margin: 10px;
-  width: 18rem;
+  width: 15rem;
+}
+
+.card-img-top {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
 }
 
 .whylocal {
@@ -138,6 +169,15 @@ h4 {
   text-align: center;
   font-style: bold;
   letter-spacing: 2px;
+}
+
+.whylocaldetails {
+  color: white;
+  text-align: center;
+  padding-bottom: 40px;
+  padding-right: 40px;
+  padding-left: 40px;
+  font-size: 20px;
 }
 
 .whylocal-section {
@@ -168,12 +208,6 @@ h4 {
 }
 
 /* Footer */
-/* CHANGE LATER */
-* {
-  margin: 0 auto;
-  padding: 0;
-  box-sizing: border-box;
-}
 
 .footer {
   background-color: #94B0B0;
@@ -192,18 +226,15 @@ h4 {
 }
 
 #logo {
-  float: left;
-  margin-left: 70px;
-  margin-top: 30px;
-  margin-bottom: 70px;
-  width: 200px;
-  padding: 20px;
+  text-align: center;
+  margin-left: 90px;
+  width: 150px;
+  height: 150px;
 }
 
 
 /* Columns */
 .col {
-  float: left;
   margin-left: 30px;
   margin-top: 60px;
   margin-bottom: 50px;
@@ -218,11 +249,6 @@ h4 {
   color: white;
   font-size: 20px;
   font-weight: bold;
-}
-
-#col1, #col2, #col3  {
-  display: flex;
-
 }
 
 
@@ -248,7 +274,7 @@ h4 {
 }
 
 a {
-  color: white 
+  color: white; 
 }
 
 a:hover {
@@ -262,8 +288,15 @@ li {
 
 
 /* Explore Section */
-a .missionbitlink !important{
-  color: black;
+a.darklink {
+  color: #94B0B0;
+  text-decoration: none;
+
+}
+
+a.darklink:hover {
+  color: #698586;
+  text-decoration: none;
 }
 
 /* About Us Collapsible Styling */
@@ -287,7 +320,7 @@ a .missionbitlink !important{
 
 /* Style the collapsible content. Note: hidden by default */
 .content {
-  padding: 0 18px;
+  padding: 15px;
   display: none;
   overflow: hidden;
   background-color: #f1f1f1;
@@ -305,10 +338,17 @@ a .missionbitlink !important{
   content: "\2796"; /* Unicode character for "minus" sign (-) */
 }
 
-
+/* CAROUSEL */
 .carousel {
   width: 100%;
-  height: 25%;
+  height: 89vh;
+  overflow: hidden;
+}
+
+.perfectfit {
+  width: 100%;
+  height: 89vh;
+  object-fit: cover;
 }
 
 /* Drink Shops */
@@ -319,18 +359,16 @@ a .missionbitlink !important{
 }
 
 .drinkimages {
+  display: block;
   width: 500px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  margin-right: auto;
+  margin-left: auto;  
 }
 
 .shopdetails {
   margin-top: 30px;
-  padding: 20px;
-  
+  padding: 20px; 
 }
-
 
 .column {
   float: left;
